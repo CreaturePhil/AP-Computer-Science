@@ -36,7 +36,7 @@ public class ScannerClass {
 		 
 		modulus); 
  
-} 
+	} 
  
 } 
  
