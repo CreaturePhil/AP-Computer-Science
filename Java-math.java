@@ -1,4 +1,4 @@
-public class Wat { 
+public class JavaMath { 
 	
 	public static void main(String[] args) { 
 	  
