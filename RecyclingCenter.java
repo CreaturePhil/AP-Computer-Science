@@ -44,23 +44,23 @@ public class RecyclingCenter{
 		g2.draw(arc3); 
 		 
 		 
-    Polygon arrow1 = new Polygon(); 
-    arrow1.addPoint(x+60, y+18); 
-    arrow1.addPoint(x+40, y+20); 
-    arrow1.addPoint(x+50, y+45); 
-    g2.fillPolygon(arrow1); 
-         
-    Polygon arrow2 = new Polygon(); 
-    arrow2.addPoint(x+120, y+55); 
-    arrow2.addPoint(x+125, y+35); 
-    arrow2.addPoint(x+105, y+35); 
-    g2.fillPolygon(arrow2); 
-     
-    Polygon arrow3 = new Polygon(); 
-    arrow3.addPoint(x+65, y+85); 
-    arrow3.addPoint(x+85, y+80); 
-    arrow3.addPoint(x+80, y+100); 
-    g2.fillPolygon(arrow3); 
+		Polygon arrow1 = new Polygon(); 
+		arrow1.addPoint(x+60, y+18); 
+		arrow1.addPoint(x+40, y+20); 
+		arrow1.addPoint(x+50, y+45); 
+		g2.fillPolygon(arrow1); 
+		 
+		Polygon arrow2 = new Polygon(); 
+		arrow2.addPoint(x+120, y+55); 
+		arrow2.addPoint(x+125, y+35); 
+		arrow2.addPoint(x+105, y+35); 
+		g2.fillPolygon(arrow2); 
+		
+		Polygon arrow3 = new Polygon(); 
+		arrow3.addPoint(x+65, y+85); 
+		arrow3.addPoint(x+85, y+80); 
+		arrow3.addPoint(x+80, y+100); 
+		g2.fillPolygon(arrow3); 
 	 
 	} 
  
