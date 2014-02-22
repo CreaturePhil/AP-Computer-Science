@@ -5,6 +5,6 @@ public void mirrorHorizontal(){
 		  Pixel point = pixels[row][column]; 
 		  pixels[pixels.length-1-row][column].setColor(point.getColor()); 
 	  } 
-  }  
+	}  
 } 
    
