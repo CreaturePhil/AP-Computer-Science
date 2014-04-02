@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import info.gridworld.actor.Critter;
 import info.gridworld.actor.Flower;
@@ -18,13 +19,13 @@ public class SmellyCritter extends Critter{
         sf = 2;
     }
     
-    public ArrayList&lt;Actor&gt; getActors(){
-        ArrayList&lt;Actor&gt; actors = new ArrayList&lt;Actor&gt;();
+    public ArrayList<Actor> getActors(){
+        ArrayList<Actor> actors = new ArrayList<Actor>();
         Location loc = getLocation();
         int row = loc.getRow();
         int col = loc.getCol();
-        for (int r = row-sf; r &lt;= row+sf; r++){
-            for (int c = col-sf; c &lt;= col+sf; c++){
+        for (int r = row-sf; r <= row+sf; r++){
+            for (int c = col-sf; c <= col+sf; c++){
                 Location temp = new Location(r,c);
                 if (getGrid().isValid(temp)) {
                     Actor a = getGrid().get(temp);
@@ -37,18 +38,19 @@ public class SmellyCritter extends Critter{
         return actors;
     }
     
-    public void processActors(ArrayList&lt;Actor&gt; actors) {
+    public void processActors(ArrayList<Actor> actors) {
         for (Actor a : actors) {
-            a.setDirection(a.getLocation().getDirectionToward(getLocation())+Location.HALF_CIRCLE);
-            /*
-            Location smellyCritterLoc = getLocation();
-            Location actorLoc = a.getLocation();
-            int directionOfSmellyCritter = actorLoc.getDirectionToward(smellyCritterLoc);
-            int turn180 = Location.HALF_CIRCLE;
-            int turningDirection = directionOfSmellyCritter+turn180;
-            a.setDirection(turningDirection);
-            */
+        	a.setDirection(a.getLocation().getDirectionToward(getLocation())+Location.HALF_CIRCLE);
+        	/*
+        	Location smellyCritterLoc = getLocation();
+        	Location actorLoc = a.getLocation();
+        	int directionOfSmellyCritter = actorLoc.getDirectionToward(smellyCritterLoc);
+        	int turn180 = Location.HALF_CIRCLE;
+        	int turningDirection = directionOfSmellyCritter+turn180;
+        	a.setDirection(turningDirection);
+        	*/
         }
     }
     
 }
+
