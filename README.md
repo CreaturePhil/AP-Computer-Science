@@ -1,6 +1,6 @@
 AP-Computer-Science
 ===================
-Welcome to this repo. I'm just storing my AP Computer Science's Java assignments here.
+Welcome to this repo. I'm just storing my AP Computer Science's Java assignments here. For a study guide on AP Computer Science, click [here](http://ap-computer-science-guide.github.io/).
 
 Teacher: Casey Gillett
 --------------
